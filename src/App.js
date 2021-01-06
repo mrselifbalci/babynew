@@ -70,7 +70,7 @@ export default class App extends Component {
         />
        
         {this.state.favoriteNames.length===0 ? 
-        (<h3 style={{ color: "grey" }}>Click on the names to add to your favorites.</h3>) :(<h3 style={{ color: "grey" }}>Favorites:</h3>) }
+        (<h3 style={{ color: "grey" }}>Click on the names to add to your favorites.</h3>) :(<h3 style={{ color: "grey" }}>Favorites:<span>(Click to remove from the favorites.)</span></h3>) }
         
         <Favorite favoriteNames={this.state.favoriteNames} nameBack={this.nameBack}/>
         <AllNames names={this.state.allnames} deleteName={this.deleteName} />
